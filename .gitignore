@@ -19,3 +19,11 @@
 *.mdb
 *.opendb
 *.VC.db
+.idea/
+*.unityproj
+*.suo
+*.userprefs
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
