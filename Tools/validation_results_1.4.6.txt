@@ -1,0 +1,47 @@
+PASS | Package manifest: 5 direct dependencies; forbidden entries: none
+PASS | Stale package lock removed: Unity Package Manager will regenerate packages-lock.json on first successful resolve
+PASS | Unity editor version: m_EditorVersion: 6000.6.0f1
+PASS | Playable scene in Build Settings: Assets/Scenes/DataCenter_Demo.unity enabled
+PASS | Runtime/editor scripts present: 5 required source files
+PASS | C# delimiter and preprocessor structure: 42 C# files: balanced delimiters and #if/#endif pairs
+PASS | XR InputDevice/CommonUsages ambiguity fixed: XR InputDevice and CommonUsages use explicit UnityEngine.XR aliases
+PASS | Runtime UI uses native UGUI Text: runtime text no longer depends on TMP world-mesh or SDF shaders
+PASS | Gameplay content (30 maintenance steps): 5 main missions/15 steps + 5 optional audits/15 steps
+PASS | Three phases per optional audit: phase counts per audit: [3, 3, 3, 3, 3]
+PASS | Centralized/responsive World Space Canvas UI: role-based font limits, auto-fit, wrapping, World Space Canvas and camera-frustum fit configured
+PASS | Responsive UI safe-frame geometry: panel, HUD and prompt fit checked across 63 aspect/FOV combinations
+PASS | All runtime UI text uses centralized UGUI factory: 6 CreateText call sites use the central factory
+PASS | Optional-task phase persistence: five independent progress counters; leaving the panel preserves validated phases
+PASS | World-space task progress indicators: three generated indicator segments reflect each audit phase without external assets
+PASS | Post-service free-roam and shift close: main service can finish before optional audits; player may continue or close from pause
+PASS | Version history and comparison table: v1.0-v1.4.6 compared, initial no-movement state documented, next releases marked as proposals
+PASS | Unity batch compile check runner: batchmode compiles assemblies and checks UGUI font import, visible glyph generation, Unity default Canvas material and World Space Canvas
+PASS | Player build version: PlayerSettings and VERSION set to 1.4.6
+PASS | Score and results denominator: 1000 base + five 120-point audits; result denominator is 1600
+PASS | Button labels mapped to matching 3D actions: each menu caption is placed on the shared Canvas at the exact position of its clickable 3D button
+PASS | World-space text planes in front of opaque panels: panel and HUD Canvas planes are offset in front of their backgrounds/buttons
+PASS | World Canvas sorting order: terminal labels 100 < menu 110 < HUD 120 < prompt 121 < reticle 122
+PASS | Centered menu/HUD text positioning: UGUI RectTransforms use centered anchors, pivot, alignment and explicit pixel bounds
+PASS | Options show current action/value: each configuration button names its setting and displays its current value
+PASS | Context prompts explain the next action: objective, approach, correct control and PC/VR tool switching are stated in context
+PASS | Tutorial and interaction flow clarity: briefing describes the loop and procedure panels separate symptom, action and rationale
+PASS | Dynamic UGUI text update guard: HUD and contextual prompt only set text when their content changes
+PASS | HUD top-left and prompt bottom-right anchoring: gameplay overlays occupy opposite compact corners instead of the center
+PASS | Opaque backing cards for gameplay prompts and labels: HUD, contextual prompt, and station/audit labels use compact dark backplates
+PASS | Dynamic foreground offset for in-world station labels: labels follow camera direction and sit slightly in front of their equipment anchors
+PASS | Bundled UGUI font resource: Liberation Sans TTF is included under Resources (350,200 bytes)
+PASS | World Space Canvas layers created for PC and VR: menu, HUD and prompt each use camera-bound World Space Canvas layers
+PASS | UGUI font and default Canvas material setup: each UGUI Text receives the bundled font, Unity default Canvas material and requested dynamic glyphs
+PASS | UGUI text geometry and Editor preflight: Editor batch check generates Spanish text using Unity's default Canvas material and a World Space Canvas
+PASS | UGUI text role sizes and world-unit mapping: all role maxima increased by 3 px and minima by 2 px; world-label default is 28/19; 1000 Canvas px = 1 m
+PASS | Liberation Sans glyph coverage: 2331 mapped glyphs; 14 non-ASCII runtime code points checked; missing: []
+PASS | TMP SDF shader removed from runtime dependency path: no runtime script creates TextMeshPro meshes or assigns TMP SDF materials
+PASS | Walkable floor collision asset: floor prefab contains a MeshCollider or BoxCollider
+PASS | Unused Timeline/XRI dependencies: no Timeline or XR Interaction Toolkit API references in project assets
+PASS | Build configuration cleanup: 1 enabled scene entry/entries; orphan AI App UI config removed
+PASS | Editor-only API isolation: UnityEditor imports are isolated to Editor folders or UNITY_EDITOR guards
+PASS | Asset GUID uniqueness: 307 GUIDs scanned; duplicates: 0
+
+RESULT: 43/43 static checks passed
+NOTE: Static validation is not Unity compilation or a player/headset build test.
+NEXT: Run Tools/compile_check.ps1 with Unity 6000.6.0f1 to execute the Editor batch compilation check.

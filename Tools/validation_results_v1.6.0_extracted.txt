@@ -1,0 +1,63 @@
+Data Center Rescue v1.6.0 — validación estática
+Raíz: /mnt/data/dcr_verify_v160/Data_Center_Rescue-main
+Pruebas superadas: 58
+[OK] 01 · manifiesto JSON y dependencias fijadas — {'com.unity.inputsystem': '1.20.0', 'com.unity.render-pipelines.universal': '17.6.0', 'com.unity.ugui': '2.6.0', 'com.unity.xr.management': '4.7.0', 'com.unity.xr.openxr': '1.19.0'}
+[OK] 02 · Unity 6000.6.0f1
+[OK] 03 · VERSION 1.6.0
+[OK] 04 · Player Settings 1.6.0
+[OK] 05 · escena jugable habilitada
+[OK] 06 · scripts runtime/editor encontrados — 6 archivos
+[OK] 07 · delimitadores, comentarios y cadenas C#
+[OK] 08 · aliases XR explícitos en controlador y manager
+[OK] 09 · UI runtime usa UnityEngine.UI, no TMP
+[OK] 10 · Resource de fuente runtime presente
+[OK] 11 · Canvas de PC Screen Space Overlay
+[OK] 12 · Canvas XR Screen Space Camera
+[OK] 13 · CanvasScaler adaptable
+[OK] 14 · Canvas sorting alto y capa UI
+[OK] 15 · distancia frontal del Canvas XR
+[OK] 16 · creación de UI centralizada
+[OK] 17 · GameManager no crea Canvas World Space
+[OK] 18 · menús y botones en capa UI
+[OK] 19 · raycast UI no bloqueado por geometría
+[OK] 20 · URP camera-stack API usada
+[OK] 21 · cámara de UI declarada Overlay
+[OK] 22 · cámara de UI limita culling a UI
+[OK] 23 · limpieza de profundidad en cámara XR
+[OK] 24 · cámara Overlay apilada después de Base
+[OK] 25 · canvas XR asignado a la cámara Overlay
+[OK] 26 · diagnóstico de cámara, capa y textos
+[OK] 27 · batch preflight comprueba cámara Overlay URP
+[OK] 28 · panel usa anchors normalizados
+[OK] 29 · botones se dimensionan por fracción de pantalla
+[OK] 30 · objetivo en banda fija del HUD
+[OK] 31 · prompt inferior y retícula central
+[OK] 32 · guía en menú, briefing, pausa y F1
+[OK] 33 · guía describe misiones y herramientas
+[OK] 34 · guía de controles PC/VR y cierre
+[OK] 35 · botón guía desde briefing devuelve al briefing
+[OK] 36 · cinco incidencias principales — 5 definiciones
+[OK] 37 · cinco auditorías preventivas — 5 definiciones
+[OK] 38 · progreso opcional conservado y terminales visuales
+[OK] 39 · PC y VR conservan entrada e interacción
+[OK] 40 · no hay clase/botón 3D para menús
+[OK] 41 · guía externa y documentación actualizadas
+[OK] 42 · sin Timeline ni XRI sin usar
+[OK] 43 · PC_RPAsset.asset usa Universal Renderer
+[OK] 44 · Mobile_RPAsset.asset usa Universal Renderer
+[OK] 45 · URP asignado a perfiles PC y Mobile
+[OK] 46 · GUID sin duplicados — 307 GUID; 
+[OK] 47 · escena y GUID de Build Settings coinciden
+[OK] 48 · área de lectura suficiente con 1–7 botones
+[OK] 49 · ScrollRect usa viewport y máscara de recorte
+[OK] 50 · desplazamiento PC por rueda y Page Up/Down
+[OK] 51 · desplazamiento XR por stick derecho
+[OK] 52 · aviso de desplazamiento separado de botones
+[OK] 53 · guía externa documenta scroll PC y VR
+[OK] 54 · prueba batch de Editor construye ScrollRect y botón UGUI
+[OK] 55 · franja de scroll no se cruza con botones ni texto (1–7 opciones)
+[OK] 56 · altura del contenido se mide con Text.preferredHeight
+[OK] 57 · auditorías bloqueadas hasta recuperar DB-03
+[OK] 58 · tabla comparativa de versiones alineada a v1.6.0
+RESULTADO: TODAS LAS PRUEBAS ESTÁTICAS SUPERADAS
+NOTA: esta validación no sustituye una compilación de Unity Editor ni una prueba física XR.
